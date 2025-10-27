@@ -208,10 +208,6 @@ def evaluate_knn(student, device, k=20, num_workers=4):
     train_acc = accuracy_score(train_labels, train_pred) * 100
     test_acc = accuracy_score(test_labels, test_pred) * 100
     
-    print(f"train accuracy: {train_acc:.2f}%")
-    print(f"test accuracy:  {test_acc:.2f}%")
-    print("="*60 + "\n")
-    
     return train_acc, test_acc
 
 
